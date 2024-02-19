@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="product-page.css">
+</head>
+<body>
+<!-- nav bar -->
+<div class="navbar">
+    <div class="logo">
+        <img src="others/logo1.png" alt="Your Logo">
+    </div>
+    <div class="nav-links">
+        <a href="#">New</a>
+        <ul class="sub-menu">
+            <li><a href="#">Hoodies</a></li>
+            <li><a href="#">Sweatshirt</a></li>
+            <li><a href="#">Category 3</a></li>
+        </ul>
+        <a href="#">Men</a>
+        <ul class="sub-menu">
+            <li><a href="#">Shirts</a></li>
+            <li><a href="#">Pants</a></li>
+            <li><a href="#">Shoes</a></li>
+        </ul>
+        <a href="#">Women</a>
+        <ul class="sub-menu">
+            <li><a href="#">Dresses</a></li>
+            <li><a href="#">Skirts</a></li>
+            <li><a href="#">Accessories</a></li>
+        </ul>
+        <a href="#">Sports</a>
+        <ul class="sub-menu">
+            <li><a href="#">Basketball</a></li>
+            <li><a href="#">Soccer</a></li>
+            <li><a href="#">Running</a></li>
+        </ul>
+    </div>
+    <div class="user-cart">
+        <a href="cart.html"><img src="others/ShoppingCartOutline.png" alt="User"></a>
+        <a href="Signin and signup\sign-up.html"><img src="others/UserCircleOutline.png" alt="Cart"></a>
+    </div>
+</div>
+
+<!-- Product Details -->
+<body>
+    <main class="container">
+
+      <!-- Left Column / Image -->
+      <div class="left-column">
+        <img data-image="black" src="others/black.png" alt="">
+        <img data-image="blue" src="others/blue1.png" alt="">
+        <img data-image="red" class="active" src="others/red.png" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <span>Slice & Style</span>
+          <h1>Slice & Style T-Shirt</h1>
+          <!-- <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation. Sturdy headband and on-ear cushions suitable for live performance</p> -->
+        </div>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <!-- <div class="product-color">
+            <span>Color</span>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+            </div>
+
+          </div> -->
+
+          <!-- Cable Configuration -->
+          <div class="cable-config">
+            <span>Size</span>
+
+            <div class="cable-choose">
+              <button>S</button>
+              <button>M</button>
+              <button>L</button>
+              <button>XL</button>
+            </div>
+
+            <!-- <a href="#">How to configurate your headphones</a> -->
+          </div>
+        </div>
+
+        <!-- Product Pricing -->
+        <div class="product-price">
+          <span>₹299</span>
+          <a href="#" class="cart-btn" data-product="product1">Add to cart</a>
+
+          
+        </div>
+        <!-- Include this script in your product_page.html or a separate JavaScript file -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const addToCartButtons = document.querySelectorAll(".cart-btn");
+
+    addToCartButtons.forEach(function (button) {
+      button.addEventListener("click", addToCart);
+    });
+
+    function addToCart(event) {
+      const product = event.target.getAttribute("data-product");
+      const cartItem = {
+        image: `product_images/${product}.jpg`,
+        name: `Product ${product}`,
+        price: 20.0,
+        quantity: 1,
+      };
+
+      // Add the item to the cartItems array
+      cartItems.push(cartItem);
+
+      // Update the cart
+      updateCart();
+    }
+  });
+</script>
+
+        <br></br>
+          <br></br>
+          <br></br>
+      </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">shipping</a></li>
+                    <li><a href="#">returns</a></li>
+                    <li><a href="#">order status</a></li>
+                    <li><a href="#">payment options</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>online shop</h4>
+                <ul>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Sports</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

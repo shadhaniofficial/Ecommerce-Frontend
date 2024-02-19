@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Reset some default styles and set the background color */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.logo img {
+    max-width: 200px; /* Adjust the maximum width of your logo */
+}
+
+.nav-links {
+    /* Adjust the margin-right for proper spacing */
+    margin-right: 55%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black; /* Color of the links */
+    margin: 0 15px; /* Adjust spacing between links */
+    font-size: 16px; /* Adjust font size */
+    font-weight: bold; /* Adjust font weight */
+    position: relative;
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+    color: gray; /* Change to your desired hover color */
+}
+
+/* Sub-down menus */
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 1; /* Ensure the sub-menu appears above other content */
+}
+
+.nav-links a:hover + .sub-menu, /* Show sub-menu on hover of the main link */
+.sub-menu:hover { /* Keep sub-menu open when hovering on the sub-menu itself */
+    display: block;
+}
+
+.sub-menu li {
+    margin: 5px 0;
+}
+
+.sub-menu a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.user-cart {
+    display: flex;
+    align-items: center;
+}
+
+/* Sub-down menus */
+
+.user-cart a {
+    margin-left: 15px; /* Adjust spacing between user and cart icons */
+    display: flex;
+    align-items: center;
+}
+
+.user-cart a:first-child {
+    margin-right: 15px; /* Adjust spacing between user and cart icons */
+}
+
+.user-cart img {
+    max-width: 30px; /* Adjust the size of the user and cart icons */
+}
+
+/* Change link color on hover */
+.nav-links a:hover {
+    color: gray; /* Change to your desired hover color */
+}
+
+/* Change icon color on hover (e.g., user or cart icons) */
+.user-cart a:hover img {
+    filter: grayscale(100%);
+}
+
+/* Search bar */
+
+.search-bar {
+    background-color: white;
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 25px; /* Adjust the border radius for curved edges */
+    margin-left: 20%; /* Adjust margins as needed */
+    margin-right: 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    margin-right: 10px; /* Adjust the spacing between the input and button */
+}
+
+.search-bar button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.search-bar img {
+    max-width: 20px; /* Adjust the size of the search icon */
+}
+
+
+
+/* Products */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.product {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-name, .product-price {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+
+/* Footer */
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #000000;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Responsive styles for smaller screens */
+
+@media (max-width: 767px) {
+    .nav-links {
+        margin-right: 0; /* Remove right margin for navigation links */
+        text-align: center; /* Center the links */
+    }
+
+    .nav-links a {
+        margin: 0 10px; /* Adjust spacing between navigation links */
+    }
+
+    .user-cart {
+        display: flex;
+        justify-content: center; /* Center user and cart icons */
+    }
+
+    .user-cart a {
+        margin: 0 10px; /* Adjust spacing between user and cart icons */
+    }
+
+    .footer-col {
+        width: 50%; /* Adjust the column width in the footer for smaller screens */
+    }
+}
+
+@media (max-width: 574px) {
+    .nav-links a {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+
+    .product {
+        width: calc(50% - 20px); /* Adjust the product box width for smaller screens */
+    }
+
+    .footer-col {
+        width: 100%; /* Adjust the column width in the footer for even smaller screens */
+    }
+}
